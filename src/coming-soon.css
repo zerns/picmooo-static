@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: #fff;
+}
+
+main {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.5rem, 3vw, 2rem);
+  width: min(100%, 60rem);
+}
+
+.logo img {
+  display: block;
+  height: auto;
+}
+
+.logo .mascot {
+  width: clamp(8rem, 24vw, 17rem);
+}
+
+.logo .wordmark {
+  width: clamp(12rem, 38vw, 28rem);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
